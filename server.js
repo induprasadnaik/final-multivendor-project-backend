@@ -23,7 +23,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://final-multivendor-project-vercel-2xl7xigt1.vercel.app/",
     credentials: true,
   },
 });
@@ -43,7 +43,7 @@ export { io }; // make available to controllerss
 
 app.use(cookieParser());
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://final-multivendor-project-vercel-2xl7xigt1.vercel.app/",
   credentials: true
 }));
 app.use(express.json());
